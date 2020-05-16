@@ -1,0 +1,13 @@
+
+
+
+rtMa9oE2EdqGvINj
+
+
+
+
+mongodb+srv://myuser:rtMa9oE2EdqGvINj@cluster0-opej1.mongodb.net/test?retryWrites=true&w=majority
+
+
+
+
