@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
+import Payments from "./Payments";
 
 class Header extends Component {
+  // Note that the this.props.auth here contains the UserModel object from the database
   renderContent() {
     switch (this.props.auth) {
       case null:
@@ -14,11 +16,18 @@ class Header extends Component {
           </li>
         );
       default:
-        return (
-          <li>
+        // going to return an ARRAY here
+        return [
+          <li key="1">
+            <Payments />
+          </li>,
+          <li key="3" style={{ margin: "0 10px" }}>
+            Credits: {this.props.auth.credits}
+          </li>,
+          <li key="2">
             <a href="/api/logout">Logout</a>
-          </li>
-        );
+          </li>,
+        ];
     }
   }
 
