@@ -19,7 +19,7 @@ class Mailer extends helper.Mail {
   }
 
   formatAddresses(recipients) {
-    // pull out email property from every recipient
+    // pull out email property from every recipient, create new object and return a brand new array
     return recipients.map(({ email }) => {
       return new helper.Email(email);
     });
