@@ -1,3 +1,4 @@
+// This is going to be sub-document schema
 const mongoose = require("mongoose");
 const { Schema } = mongoose;
 
