@@ -3,7 +3,7 @@ import StripeCheckout from "react-stripe-checkout";
 import { connect } from "react-redux";
 import * as actions from "../actions";
 
-class Payments extends React.Component {
+class Payments extends Component {
   render() {
     // US Dollar Cents
     // Note that button is a child component of StripeCheckout below
